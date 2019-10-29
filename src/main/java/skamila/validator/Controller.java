@@ -28,17 +28,18 @@ public class Controller {
                 loweLetterCounter++;
             } else if (Character.isDigit(c)) {
                 digitCounter++;
+            } else if(Character.isWhitespace(c)) {
             } else {
                 specialCharactersCounter++;
             }
 
         }
 
-        String result = "Przekazany ciąg " + s + " zawiera: " +
-                upperLetterCounter + " wielkich liter " +
-                loweLetterCounter + " małych liter " +
-                digitCounter + " cyfr i " +
-                specialCharactersCounter + " znaków specjalnych.";
+        String result = "Przekazany ciąg \"" + s + "\" zawiera: " +
+                " wielkie litery: " + upperLetterCounter +
+                " małe litery: " + loweLetterCounter +
+                " cyfry: " + digitCounter +
+                " znaki specjalne: " + specialCharactersCounter;
 
         return new ResponseEntity(result, new HttpHeaders(), HttpStatus.OK);
     }

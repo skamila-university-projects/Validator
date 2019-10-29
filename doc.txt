@@ -1,5 +1,6 @@
-Zapytanie zwraca informację o ilości poszczególnych znakow (małe litery, duże, cyfry i znaki specjalne) w przekazanym jako parametr s tekście.
+Zapytanie zwraca informację o ilości poszczególnych znakow (wielkie litery, małe litery, cyfry i znaki specjalne) w przekazanym jako parametr s tekście.
 
-Po wysłaniu zapytania:
-http://localhost:8080/validate?s=przykladowyTekst
-Przekazany ciąg hello! zawiera: 0 wielkich liter 5 małych liter 0 cyfr i 1 znaków specjalnych.
+Przykładowe zapytanie:
+http://localhost:8080/validate?s=hello!
+Przykładowa odpowiedź:
+Przekazany ciąg "hello!" zawiera: wielkie litery: 0 małe litery: 5 cyfry: 0 znaki specjalne: 1
